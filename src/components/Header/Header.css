@@ -1,0 +1,56 @@
+/* -------------------------------------------------------------------------- */
+/*                                header styles                               */
+/* -------------------------------------------------------------------------- */
+.shrink-nav {
+  transition: font-size 0.5s, background-color 0.5s;
+}
+.navbar-nav {
+  display: flex;
+  justify-content: center;
+}
+.contact-button {
+  text-align: center;
+  border: 3px solid rgb(0, 0, 0) !important;
+  border-radius: 12px !important;
+  transition: border-radius 0.7s;
+  margin-left: 30px !important;
+  margin-right: 30px !important;
+}
+.contact-button:hover {
+  color: black !important;
+  border: 3px solid black !important;
+  background-image: linear-gradient(
+    to left bottom,
+    #884dff,
+    #009aff,
+    #00c7ff,
+    #00e7eb,
+    #33ffad
+  );
+  transition: border-radius 0.7s, border 0.5s, background-color 0.5s !important;
+}
+.link {
+  text-align: center;
+  transition: none;
+  margin-left: 30px;
+  margin-right: 30px;
+  border-bottom: 3px solid transparent;
+}
+.link:hover {
+  border-bottom: 3px solid #ff3300;
+}
+.brand-name {
+  position: absolute !important;
+}
+@media only screen and (max-width: 991px) {
+  .brand-name {
+    position: relative !important;
+  }
+
+  .navbar-nav {
+    height: 100vh !important;
+    display: flex !important;
+    justify-content: space-evenly;
+    font-size: 35px;
+  }
+}

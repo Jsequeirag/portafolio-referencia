@@ -1,0 +1,64 @@
+/* -------------------------------------------------------------------------- */
+/*                                    Home                                    */
+/* -------------------------------------------------------------------------- */
+.home {
+  min-height: 100vh;
+  background-image: url("/src/img/blob-orange-bg.svg"),
+    url("/src/img/blob-green-bg.svg"),
+    url("/src/img/home-botton-line-background.svg");
+
+  background-size: cover, cover, cover;
+}
+.outline-button {
+  font-weight: 500;
+  border-radius: 14px;
+  border: 3px solid;
+  background-color: transparent;
+  transition: font-weight 0.1s, transform 0.1s, background-color 0.5s;
+  padding: 6px;
+  margin-left: 10px !important;
+  margin-right: 10px !important;
+}
+
+.outline-button:hover {
+  font-weight: 900;
+  background-color: #33ffad;
+  border-radius: 14px;
+  border: 3px solid;
+  transform: scale(1.05);
+  transition: font-weight 0.1s, transform 0.1s, background-color 0.5s;
+}
+@media only screen and (max-width: 767px) {
+  .programmer-image-div {
+    justify-content: center !important;
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/*                          programmer image animated                         */
+/* -------------------------------------------------------------------------- */
+.blob-animated {
+  z-index: -1;
+  position: absolute;
+  height: 300px !important;
+  width: 300px !important;
+}
+.rocketman-image-div {
+  z-index: 0;
+}
+.move-animation {
+  position: relative;
+  animation-name: example;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes example {
+  from {
+    transform: translate(2px, -2px) rotate(0deg);
+  }
+  to {
+    transform: translate(0px) rotate(3deg);
+  }
+}

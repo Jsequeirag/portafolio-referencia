@@ -1,0 +1,37 @@
+.projects {
+  min-height: 100vh;
+
+  background-image: url("/src/img/projects-buttom-line-background.svg"),
+    url("/src/img/projects-blob-background.svg");
+  background-size: cover, cover;
+}
+.card {
+  border-radius: 14px !important;
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+}
+.gradient-button {
+  font-weight: 500;
+  border-radius: 14px;
+  border: 3px solid;
+  background-color: transparent;
+  transition: font-weight 0.1s, transform 0.1s, background-color 0.5s;
+  padding: 6px;
+  margin-left: 10px !important;
+  margin-right: 10px !important;
+}
+.gradient-button:hover {
+  font-weight: 900;
+  border-radius: 14px;
+  border: 3px solid;
+  transform: scale(1.05);
+  transition: font-weight 0.1s, transform 0.1s, background-color 0.5s;
+  background-image: linear-gradient(
+    to right top,
+    #884dff,
+    #009aff,
+    #00c7ff,
+    #00e7eb,
+    #33ffad
+  );
+}

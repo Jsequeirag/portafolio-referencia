@@ -1,0 +1,13 @@
+/* -------------------------------------------------------------------------- */
+/*                               general config                               */
+/* -------------------------------------------------------------------------- */
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono&display=swap");
+html {
+  overflow-x: hidden !important;
+}
+body {
+  font-family: "Space Mono", monospace;
+  font-size: 20px;
+  position: relative !important;
+}
+

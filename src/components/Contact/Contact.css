@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Rampart+One&display=swap");
+
+.contact {
+  font-family: "Rampart One", cursive;
+  font-weight: bold;
+  min-height: 60vh;
+  background-image: linear-gradient(
+    to left bottom,
+    #884dff,
+    #009aff,
+    #00c7ff,
+    #00e7eb,
+    #33ffad
+  );
+  background-size: cover, cover;
+}
+.astronaut-image-div {
+  position: relative;
+  left: 8.8% !important;
+  transform: scaleX(-1) !important;
+}
+.astronaut-image-animation {
+  position: relative;
+  animation-name: example;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.contacts-div {
+  display: flex;
+}
+.form-div {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.child-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 3px solid black;
+  border-radius: 15px;
+  padding: 10px;
+  font-weight: bold !important;
+}
+
+.outline-button {
+  font-weight: bold !important;
+  border-radius: 14px;
+  border: 3px solid;
+  background-color: transparent;
+  transition: font-weight 0.1s, transform 0.1s, background-color 0.5s;
+  padding: 6px;
+  margin-left: 10px !important;
+  margin-right: 10px !important;
+}
+
+.outline-button:hover {
+  font-weight: 900;
+  background-color: #33ffad;
+  border-radius: 14px;
+  border: 3px solid;
+  transform: scale(1.05);
+  transition: font-weight 0.1s, transform 0.1s, background-color 0.5s;
+}
+@keyframes example {
+  from {
+    transform: translate(2px, -10px) rotate(0deg);
+  }
+  to {
+    transform: translate(0px) rotate(1deg);
+  }
+}
